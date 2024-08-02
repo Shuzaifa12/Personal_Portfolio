@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(1, 1, 69);
+    color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background-color: rgba(42, 42, 92, 0.776);
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style: none;
+    margin: 0px 23px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    font-weight: bold;
+    font-size: large;
+    color: rgb(141, 218, 7);
+    text-decoration:underline;
+}
+.left{
+    font-size: 1.5rem
+}
+.first_section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 70px 0px;
+    background-color: rgb(26, 84, 107);
+}
+.first_section > div{
+    width: 40%;
+}
+.leftsection{
+    margin: 5px 0px;
+    padding: 3px;
+    font-size: 2rem;
+    text-align: justify;
+    border: 2px solid white;
+}
+.rightsection img{
+    border: 2px solid black;
+    width: 200px;
+    height: 250px;
+    margin-left: 100px;
+}
+.purple{
+    color: rgb(15, 15, 129);
+}
+.second_section{
+    display: flex;
+    align-items: center;
+    margin: 100px 0px;
+    background-color: rgb(168, 48, 232);
+}
+.second_section h2{
+    margin-left: 50px;
+}
+.second_section div p{
+    font-size: 2rem;
+}
+.second_section div{
+    font-size: 1rem;
+    border: 2px solid white;
+    margin: 5px;
+    margin-left: 120px;
+}
+.second_section li{
+    font-size: 20px;
+    margin: 5px 0px;
+    padding: 3px;
+}
+.third_section{
+    display: flex;
+    align-items: center;
+    margin: 100px 0px;
+    background-color: rgb(54, 16, 28);
+}
+.third_section h2{
+    margin-left: 100px;
+}
+.third_section div p{
+    font-size: 2rem;
+}
+.third_section div{
+    font-size: 1rem;
+    border: 2px solid white;
+    margin: 5px;
+    margin-left: 120px;
+}
+.third_section li{
+    font-size: 20px;
+    margin: 5px 0px;
+    padding: 3px;
+}
+.fourth_section{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(23, 29, 20);
+}
+.fourth_section .left{
+    margin: 5px;
+    margin-left: 150px;
+}
+.fourth_section .left h2{
+    font-size: 22px;
+    margin: 120px 0px;
+}
+.fourth_section .right{
+    border: 2px solid white;
+    margin: 5px;
+    margin-right:150px;
+}
+.fourth_section .right div{
+    border: 2px solid white;
+    margin: 10px;
+    padding: 5px;
+}
+.fourth_section .right div a{
+    color: white;
+}
+.fourth_section .right div a:hover{
+    color: red;
+    font-size: large;
+}
+.fifth_section {
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 0px;
+    background-color: rgb(144, 62, 4);
+} 
+.fifth_section div{
+    margin: 5px;
+}
+.fifth_section .left{
+    margin-left: 220px;
+}
+.fifth_section div h2{
+    margin: 60px 0px;
+    font-size: 22px;
+}
+.fifth_section .right{
+    border: 2px solid white;
+    margin-right: 60px;
+}
+.fifth_section .info{
+    border: 2px solid white;
+    margin: 10px;
+    padding: 5px;
+    font-size: large;
+}
+.fifth_section .info a{
+    color: white;
+}
+.fifth_section .info a:hover{
+    color: rgb(17, 2, 35);
+    font-size: larger
+}
+.button{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    height: 30px;
+}
+.button button{
+    background-color: black;
+    border: 2px solid white;
+}
+.button a {
+    font-size: large;
+    color: red;
+}
+        @media (max-width: 1440px) {
+    header main {
+        width: fit-content;
+        height: 400px;
+    }
+    nav {
+        justify-content: space-around;
+        align-items: center;
+        height: 70px;
+        background-color: rgba(42, 42, 92, 0.776);
+    }
+    header nav li {
+        width: fit-content;
+    }
+        }
+        @media (min-width: 1024px) and (max-width: 1439px) {
+        header main {
+            width: auto;
+            height: 400px;
+        }
+        nav {
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background-color: rgba(66, 66, 147, 0.776);
+        }
+        .first_section {
+            width: auto;
+        }
+        .second_section {
+            width: auto;
+        }
+        .third_section {
+            width: auto;
+        }
+        .fourt_section {
+            width: auto;
+        }
+        .fifth_section {
+            width: auto;
+        }
+        }
+        @media (min-width: 768px) and (max-width: 1023px) {
+        header main {
+            width: fit-content;
+            height: 400px;
+        }
+        nav {
+            width: auto;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background-color: rgba(2, 124, 190, 0.776);
+        }
+        .first_section {
+            width: auto;
+        }
+        .second_section {
+            width: auto;
+        }
+        .third_section {
+            width: auto;
+        }
+        .fourt_section {
+            width: auto;
+        }
+        .fifth_section {
+            width: auto;
+        }
+        }
+        @media (min-width: 320px) and (max-width: 767px) {
+        header main {
+            width: fit-content;
+            height: 400px;
+        }
+        nav {
+            width: fit-content;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background-color: rgba(2, 2, 19, 0.776);
+        }
+        .first_section {
+            width: fit-content;
+        }
+        .first_section .leftsection {
+            width: 22rem;
+            font-size: 2rem;
+        }
+        .rightsection img {
+            border: 2px solid black;
+            width: 150px;
+            height: 200px;
+        }
+        .second_section {
+            width: fit-content;
+        }
+        .second_section div {
+            width: 27rem;
+        }
+        .second_section div p {
+            font-size: 1.5rem;
+        }
+        .second_section li {
+            font-size: 1.5rem;
+        }
+        .third_section {
+            width: fit-content;
+        }
+        .third_section div {
+            width: 17rem;
+        }
+        .third_section div p {
+            font-size: 1.5rem;
+        }
+        .fourth_section {
+            width: fit-content;
+        }
+        .fourth_section .left h2 {
+            font-size: 20px;
+        }
+        .fourth_section .right {
+            width: rem;
+            font-size: 1rem;
+        }
+        .fifth_section {
+            width: fit-content;
+        }
+        .fifth_section .info {
+            width: 16.5rem;
+            border: 2px solid white;
+            margin: 10px;
+            padding: 5px;
+            font-size: 1.25rem;
+        }
+        }
+    </style>
+</head>
+<body>
+   <header>
+    <nav>
+        <div class="left">
+            Syed Huzaifa's Portfolio
+        </div>
+        <div class="right">
+            <ul>
+                <li><a href="#about", target="_self">ABOUT</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#certifications">CERTIFICATIONS</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT INFO</a></li>
+            </ul>
+        </div>
+    </nav>
+   </header>
+   <main>
+    <section class="first_section", id="about">
+        <h2>ABOUT</h2>
+        <div class="leftsection">Hello, <span class="purple">I am Syed Huzaifa Bin Hamid</span>
+            <div>highly enthusiastic Engineer and a Web Developer. I have completed my bachelors in Petroleum and Gas Engineering and currently enrolled in an virtual internship program at <span class="purple">TECH NET CLOUD</span>, also in the Governor Sindh IT course and looking forward to develop my skills in IT field.</div>
+        </div>
+        <div class="rightsection">
+            <img src="/Mine Pic.png" alt="">
+        </div>
+    </section>
+    <section class="second_section", id="skills">
+        <h2>SKILLS</h2>
+        <div>
+            <p>Being an Engineer my key skills are:</p>
+            <ol>
+                <li>Hazards Identification</li>
+                <li>Risk Analysis</li> 
+                <li>Risk Management</li> 
+                <li>Data Analysis</li>
+                <li>Performance Prediction</li>
+                <li>Data Management</li>
+                <li>Microsoft excel</li>
+                <li>Microsoft Word</li>
+                <li>Microsoft PowerPoint</li>
+                <li>Typescript</li>
+                <li>Javascript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+            </ol>
+        </div>
+    </section>
+    <section class="third_section", id="certifications">
+        <h2>CERTIFICATIONS</h2>
+        <div>
+            <ul>
+                <li>Microsoft office</li>
+                <li>Computer Modelling Group</li>
+                <li>IWCF (level 01)</li>
+                <li>Institution of Occupational Safety and Health (IOSH)</li>
+                <li>Administration of Occupational Safety and Health (AOSH)</li>
+                <li>Production Forcast (OFM)</li>
+            </ul>
+        </div>
+    </section>
+    <section class="fourth_section", id="projects">
+        <div class="left">
+            <h2>PROJECTS</h2>
+        </div>
+        <div class="right">
+            <div>
+                <h3>45 Questions Assignment Project</h3>
+                <a href="www.github.com">https://github.com/Shuzaifa12/Assignment-45-Questions</a>
+            </div>
+            <div>
+                <h3>CLI Calculator Project</h3>
+                <a href="www.github.com">https://github.com/Shuzaifa12/esh-calculator</a>
+            </div>
+            <div>
+                <h3>ATM Machine Project</h3>
+                <a href="www.github.com">https://github.com/Shuzaifa12/esh-atm-machine</a>
+            </div>
+            <div>
+                <h3>Number Guessing Game Project</h3>
+                <a href="www.github.com">https://github.com/Shuzaifa12/esh-number-guessing-game</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <section class="fifth_section", id="contact">
+            <div class="left">
+                <h2>CONTACT INFO</h2>
+            </div>
+            <div class="right">
+                <div class="info">
+                    Cell no: +92-317-1243983
+                </div>
+                <div class="info">
+                    Email id: <a href="www.gmail.com">shuzaifa32@gmail.com</a>
+                </div>
+                <div class="info">
+                    Linkedin: <a href="www.linkedin.com">www.linkedin.com/in/S-Huzaifa</a>
+                </div>
+            </div>
+    </footer>
+    <div class="button">
+        <button >
+            <a href="#about">Back to TOP</a>
+        </button>
+    </div>
+   </main>
+</body>
+</html>
